@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+:root{
+    --main-bg-color: #2874f0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background: var(--main-bg-color);
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+nav{
+    display: flex;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 80px;
+    padding: 0 20px;
+}
+
+/* making home about as flexbox and in same line */
+nav ul{
+    height: 58px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* Styling home about and contact in nav bar */
+nav ul li{
+    list-style: none;
+    padding: 0 20px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+
+}
+
+nav ul li a:hover{
+    color: black;
+    font-weight: bolder;
+
+}
+
+.search{
+    display: flex;
+    align-items: center;
+}
+
+.search input{
+    height: 5vh;
+    width: 30vw;
+    border-radius: 1px;
+    margin: 0 75px;
+}
+
+.card h3{
+    font-family: 'Roboto', Arial, sans-serif;
+
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+    overflow: hidden ;
+}
+
+.card{
+    font-family: 'Roboto', Arial, sans-serif;
+    max-width: 90vw;
+    margin: 37px auto;
+}
+
+.card-item{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0px 15px;
+}
+
+.container{
+    min-height: calc(100vh - 58px - 9vh);
+}
+
+footer{
+    height: 9vh;
+    background-color: #172337;
+    color: white;
+    font-family: 'Roboto',Arial, sans-serif;
+}
